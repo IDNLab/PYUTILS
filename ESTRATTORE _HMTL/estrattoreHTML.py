@@ -46,7 +46,7 @@ def estrai_prezzo(riga_elab):
                 file.write(contenuto_html)
             return "Errore contenuto trovato all'interno del div"
         
-        # Estrai il testo dal tag span e restituisci il prezzo
+        # Estrai il testo dal tag span
         extracted_text = tag_out.text.strip()
         print(extracted_text)
         
