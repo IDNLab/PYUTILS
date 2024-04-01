@@ -25,7 +25,7 @@ def estrai_prezzo(riga_elab):
     try:
         soup = BeautifulSoup(contenuto_html, 'html.parser')
         
-        # Cerca il div con la classe specificata (cambiare il div a seconda della pagina da analizzare es sotto è il prezzo di amazon)
+        # Cerca il div con la classe specificata (cambiare il div a seconda della pagina da analizzare es sotto è il prezzo di un prodotto amazon)
         div_out = soup.find('div', class_='a-section a-spacing-none aok-align-center aok-relative')
         
         if div_out is None:
